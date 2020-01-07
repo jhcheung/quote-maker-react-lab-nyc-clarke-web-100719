@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+// import { connect } from 'react-redux'
+import QuoteForm from './components/QuoteForm'
+import Quotes from './containers/Quotes'
+
 
 class App extends Component {
   render() {
@@ -8,14 +12,20 @@ class App extends Component {
           <h1>Quote Maker</h1>
         </div>
         <hr />
+        <QuoteForm />
+
+        <Quotes />
         {/*
           TODO:
 
           Render QuoteForm and Quotes Components
-         */}
+          
+         */
+        }
       </div>
     );
   }
 }
+
 
 export default App;
